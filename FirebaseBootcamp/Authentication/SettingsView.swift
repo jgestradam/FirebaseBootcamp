@@ -78,95 +78,6 @@ struct RandomModel: Identifiable {
     var typeField: String
 }
 
-struct NewScreen: View {
-    
-    @StateObject private var viewModel = SettingsViewModel()
-    
-    @Environment(\.presentationMode) var presentationMode
-    
-    let selectedModel: RandomModel
-    
-    var body: some View {
-        ZStack(alignment: .topLeading) {
-            
-            VStack {
-                HStack{
-                    Button {
-                        presentationMode.wrappedValue.dismiss()
-                    } label: {
-                        Image(systemName: "xmark")
-                            .foregroundColor(.white)
-                            .font(.largeTitle)
-                            .padding()
-                    }
-                    Spacer()
-                }
-                
-                Text(selectedModel.title)
-                    .foregroundColor(Color.accentColor)
-                    .font(.largeTitle)
-                    .bold()
-                
-                if selectedModel.typeField == "New Email" {
-                    
-                    TextField("\(selectedModel.typeField)", text: $viewModel.newEmail)
-                        .padding()
-                        .background(Color.gray.opacity(0.4))
-                        .cornerRadius(10)
-                    
-                    Button {
-                        Task {
-                            do {
-                                try await viewModel.updateEmail()
-                                print("Email Updated!")
-                                presentationMode.wrappedValue.dismiss()
-                            } catch {
-                                print(error)
-                            }
-                        }
-                    } label: {
-                        Text("Reset")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .frame(height: 55)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    }
-                } else {
-                    
-                    SecureField("\(selectedModel.typeField)", text: $viewModel.newPassword)
-                        .padding()
-                        .background(Color.gray.opacity(0.4))
-                        .cornerRadius(10)
-                    
-                    Button {
-                        Task {
-                            do {
-                                try await viewModel.updatePassword()
-                                print("Password Updated!")
-                                presentationMode.wrappedValue.dismiss()
-                            } catch {
-                                print(error)
-                            }
-                        }
-                    } label: {
-                        Text("Reset")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .frame(height: 55)
-                            .frame(maxWidth: .infinity)
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    }
-                }
-                Spacer()
-            }
-        }
-        .padding()
-        .background(.ultraThinMaterial)
-    }
-}
 
 extension SettingsView {
     private var emailSection: some View {
@@ -194,7 +105,7 @@ extension SettingsView {
             Text("Email functions")
         }
         .sheet(item: $selectedModel) { model in
-            NewScreen(selectedModel: model)
+            SheetUpdatesView(selectedModel: model)
         }
     }
 }

@@ -20,6 +20,7 @@
 		5D2A9FD029C212690089C467 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FCF29C212690089C467 /* AuthenticationManager.swift */; };
 		5D2A9FD229C21CE00089C467 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FD129C21CE00089C467 /* RootView.swift */; };
 		5D2A9FD429C220F60089C467 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FD329C220F60089C467 /* SettingsView.swift */; };
+		5DCDA47F29C510AF0034C35F /* SheetUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5D2A9FCF29C212690089C467 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		5D2A9FD129C21CE00089C467 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5D2A9FD329C220F60089C467 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetUpdatesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5D2A9FCF29C212690089C467 /* AuthenticationManager.swift */,
 				5D2A9FD129C21CE00089C467 /* RootView.swift */,
 				5D2A9FD329C220F60089C467 /* SettingsView.swift */,
+				5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				5D2A9FD429C220F60089C467 /* SettingsView.swift in Sources */,
 				5D046DD129C003B200913AC8 /* ContentView.swift in Sources */,
 				5D046DCF29C003B200913AC8 /* FirebaseBootcampApp.swift in Sources */,
+				5DCDA47F29C510AF0034C35F /* SheetUpdatesView.swift in Sources */,
 				5D2A9FD229C21CE00089C467 /* RootView.swift in Sources */,
 				5D2A9FCC29C20E3B0089C467 /* AuthenticationView.swift in Sources */,
 				5D2A9FD029C212690089C467 /* AuthenticationManager.swift in Sources */,
