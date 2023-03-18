@@ -12,6 +12,13 @@ final class SettingsViewModel: ObservableObject {
     
     @Published var newEmail = ""
     @Published var newPassword = ""
+    @Published var authProviders: [AuthProviderOption] = []
+    
+    func loadAuthProviders() {
+        if let providers = try? AuthenticationManager.shared.getProvider() {
+            authProviders = providers
+        }
+    }
     
     func signOut() throws {
         try AuthenticationManager.shared.signOut()
@@ -56,9 +63,14 @@ struct SettingsView: View {
                     }
                 }
             }
+            if viewModel.authProviders.contains(.email) {
+                emailSection
+            }
+
             
-            emailSection
-            
+        }
+        .onAppear {
+            viewModel.loadAuthProviders()
         }
         .navigationBarTitle("Settings")
     }
