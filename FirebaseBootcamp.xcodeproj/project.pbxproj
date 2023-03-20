@@ -20,6 +20,7 @@
 		5D2A9FD029C212690089C467 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FCF29C212690089C467 /* AuthenticationManager.swift */; };
 		5D2A9FD229C21CE00089C467 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FD129C21CE00089C467 /* RootView.swift */; };
 		5D2A9FD429C220F60089C467 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2A9FD329C220F60089C467 /* SettingsView.swift */; };
+		5D70184829C8E44C00F9486B /* SighInAppleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D70184729C8E44C00F9486B /* SighInAppleHelper.swift */; };
 		5DC6895629C566AB0072ED21 /* SignInGoogleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC6895529C566AB0072ED21 /* SignInGoogleHelper.swift */; };
 		5DCDA47F29C510AF0034C35F /* SheetUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */; };
 		5DCDA48229C51D850034C35F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 5DCDA48129C51D850034C35F /* GoogleSignIn */; };
@@ -39,6 +40,7 @@
 		5D2A9FCF29C212690089C467 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		5D2A9FD129C21CE00089C467 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5D2A9FD329C220F60089C467 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5D70184729C8E44C00F9486B /* SighInAppleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighInAppleHelper.swift; sourceTree = "<group>"; };
 		5DC6895529C566AB0072ED21 /* SignInGoogleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInGoogleHelper.swift; sourceTree = "<group>"; };
 		5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetUpdatesView.swift; sourceTree = "<group>"; };
 		5DCDA48529C51DD40034C35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				5D2A9FD329C220F60089C467 /* SettingsView.swift */,
 				5DCDA47E29C510AF0034C35F /* SheetUpdatesView.swift */,
 				5DC6895529C566AB0072ED21 /* SignInGoogleHelper.swift */,
+				5D70184729C8E44C00F9486B /* SighInAppleHelper.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC6895629C566AB0072ED21 /* SignInGoogleHelper.swift in Sources */,
+				5D70184829C8E44C00F9486B /* SighInAppleHelper.swift in Sources */,
 				5D2A9FD429C220F60089C467 /* SettingsView.swift in Sources */,
 				5D046DD129C003B200913AC8 /* ContentView.swift in Sources */,
 				5D046DCF29C003B200913AC8 /* FirebaseBootcampApp.swift in Sources */,
@@ -365,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jgestradam.FirebaseBootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgestradam.FirebaseBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -396,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jgestradam.FirebaseBootcamp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgestradam.FirebaseBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

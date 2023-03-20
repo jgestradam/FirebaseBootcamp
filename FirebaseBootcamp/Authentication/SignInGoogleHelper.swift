@@ -33,7 +33,7 @@ final class SignInGoogleHelper {
         let name = gidSignInResults.user.profile?.name
         let email = gidSignInResults.user.profile?.email
         
-        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, name: name, email: email)
+        let tokens = GoogleSignInResultModel(idToken: idToken, accessToken: accessToken, name: name, email: email )
         return tokens
     }
 }
